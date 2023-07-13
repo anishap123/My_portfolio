@@ -3,6 +3,8 @@ import Sidebar from "../component/Sidebar";
 import ProfileCard from "../component/ProfileCard";
 import About from "./About";
 
+
+
 const Main = () => {
   return (
     <>
@@ -13,8 +15,10 @@ const Main = () => {
           <ProfileCard />
         </div>
         
-        <div className="basis-[58%] border h-[85vh] mt-10 ml- -2 mr-8 bg-white rounded-r-md ">
-          <About />
+        
+        <div className="basis-[58%] border h-[85vh] mt-10 ml- -2 mr-8 bg-white rounded-r-md  overflow-auto">
+          <About  />
+         
         </div>
       </div>
     </>

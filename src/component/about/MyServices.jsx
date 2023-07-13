@@ -1,0 +1,46 @@
+import React from "react";
+import { FaFrownOpen, FaWordpress } from "react-icons/fa";
+
+
+const MyServices = () => {
+  return (
+    <>
+      <div className="font-semibold text-[#4c7753] mt-6  text-[24px]">My Services</div>
+      <hr className=" flex my-2  h-1 w-[8%] bg-gray-800 " />
+      <div class="grid grid-cols-2  place-content-stretch mt-2 h-48 ...">
+      <div className=" flex flex-col">
+        <h1 className="text-[#4c7753] p-4 ">
+        <FaWordpress  className="mt-2 text-[#4c7753] text-[36px] " />
+        </h1>
+          <h2 className="flex text-[20px] font-semibold text-[#54595F]">Wordpress Development</h2>
+          
+          <p className="flex text-[16px] text-[#7A7A7A]  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+        </div>
+        <div className=" flex flex-col">
+        <h1 className="text-[#4c7753] p-4 ">
+        <FaWordpress  className="mt-2 text-[#4c7753] text-[36px] " />
+        </h1>
+          <h2 className="flex text-[20px] font-semibold text-[#54595F]">Wordpress Development</h2>
+          
+          <p className="flex text-[16px] text-[#7A7A7A]  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+        </div>
+        <div className="mt-4">
+        <h1 className="text-[#4c7753] p-4 ">
+        <FaFrownOpen className="mt-2 text-[#4c7753] text-[36px]" />
+        </h1>
+          <h2 className="flex text-[20px] font-semibold text-[#54595F]">Front-End</h2>
+          <p className="flex text-[16px] mb-4 text-[#7A7A7A] ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+        </div>
+        <div className="mt-4">
+        <h1 className="text-[#4c7753] p-4 ">
+        <FaFrownOpen className="mt-2 text-[#4c7753] text-[36px]" />
+        </h1>
+          <h2 className="flex text-[20px] font-semibold text-[#54595F]">Front-End</h2>
+          <p className="flex text-[16px] mb-4 text-[#7A7A7A] ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default MyServices;

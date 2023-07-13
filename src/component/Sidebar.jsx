@@ -15,6 +15,7 @@ const Sidebar = () => {
     <div className=" flex mb-2  items-center gap-2 p-4 flex-col cursor-pointer ">
       <FaUser className='text-[#4c7753]'/>
       <p className='hover:text-[#4c7753]'>About</p>
+      
     
     </div> 
     <hr className= " flex my-2  h-full w-full bg-gray-800 " />

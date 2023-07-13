@@ -18,7 +18,7 @@ const Pricing = () => {
           </h2>
 
           <p className="flex text-[16px] text-[#7A7A7A] text-center ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. .
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit
           </p>
         </div>
         <div className=" flex flex-col justify-center items-center">

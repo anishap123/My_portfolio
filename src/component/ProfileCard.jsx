@@ -13,6 +13,8 @@ import { Link } from "react-router-dom";
 const ProfileCard = () => {
   return (
     <>
+            <div className=" basis-[35%]  h-[90vh] mt-6 ml-2 mx-auto     max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-white">
+
       <div className="h-[100%] w-[100%] ">
         <div className="flex h-[60%] w-[100%] ">
           <img className=" h-full w-full rounded-t-lg " src={image} alt=" " />
@@ -56,6 +58,7 @@ const ProfileCard = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

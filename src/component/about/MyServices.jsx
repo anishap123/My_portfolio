@@ -14,7 +14,7 @@ const MyServices = () => {
         </h1>
           <h2 className="flex text-[20px] font-semibold text-[#54595F]">Wordpress Development</h2>
           
-          <p className="flex text-[16px] text-[#7A7A7A]  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
+          <p className="flex text-[16px] text-[#7A7A7A]  ">Lorem ipsum dolor sit, amet consectetur gggggg. .</p>
         </div>
         <div className=" flex flex-col">
         <h1 className="text-[#4c7753] p-4 ">

@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../image/profile3.jpg";
+import image from "../image/profile1.png";
 import {
   FaFacebook,
   FaGithub,
@@ -17,7 +17,7 @@ const ProfileCard = () => {
 
       <div className="h-[100%] w-[100%] ">
         <div className="flex h-[60%] w-[100%] ">
-          <img className=" h-full w-full rounded-t-lg " src={image} alt=" " />
+          <img className=" h-full w-full rounded-t-lg object-cover " src={image} alt=" " />
         </div>
         
         <div className="flex flex-col items-center justify-between h-[40%]">

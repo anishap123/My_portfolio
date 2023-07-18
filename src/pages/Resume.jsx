@@ -1,14 +1,14 @@
 import React from "react";
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaFrownOpen, FaWordpress } from "react-icons/fa";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const Resume = () => {
   const dataItems = [
-    { name: "React JS", percentage: 55 },
-    { name: "Html/Css", percentage: 75 },
+    { name: "React JS", percentage: 75 },
+    { name: "Html/Css", percentage: 80 },
     { name: "Wordpress", percentage: 90 },
     { name: "Django", percentage: 30 },
-
-
 
     // Add more data items as needed
   ];
@@ -40,13 +40,22 @@ const Resume = () => {
         "Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale.",
     },
   ];
+  const percentage = 66;
+
+  // front-end
+  const data = [
+    { percentage: 75, title: "React " },
+    { percentage: 80, title: "Html/Css" },
+    { percentage: 85, title: "Bootstrap" },
+    { percentage: 90, title: "Tailwind Css" },
+  ];
 
   return (
     <>
       <div className="basis-[58%] border h-[85vh] mt-10 ml- -2 mr-8 bg-white rounded-r-md  overflow-auto">
         <div className="About flex flex-col ">
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer ">
-            Resume page
+            Resume
           </div>
           <hr className=" flex my-2  h-full w-full bg-gray-800 " />
 
@@ -65,9 +74,9 @@ const Resume = () => {
                       key={item.id}
                       className="mb-10 ml-6 border p-2 rounded-md shadow-md bg-gradient-to-r from-[#e0e3e5] to-[#ffffff]"
                     >
-                      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+                      <span className="absolute flex items-center justify-center w-6 h-6 bg-[#bbdac0] rounded-full -left-3 ring-8 ring-white">
                         <svg
-                          className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                          className="w-2.5 h-2.5  dark:text-[#4c7753]"
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="currentColor"
@@ -76,15 +85,13 @@ const Resume = () => {
                           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                       </span>
-                     
+
                       <h3 className="flex items-center mb-1 text-lg font-semibold text-[#54595F]">
                         {item.title}{" "}
                         <span className=" ml-2 bg-white text-sm font-medium mr-2 px-2.5 py-1 rounded dark:bg-white text-[#4c7753] shadow-md">
                           {item.grade}
                         </span>
                       </h3>
-                    
-                      
 
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                         {item.university}
@@ -99,18 +106,16 @@ const Resume = () => {
               </ol>
             </div>
             <div className="flex justify-start w-[100%] flex-col ml-6">
-              <p className=" text-[15px] text-sm text-[#4c7753]">
-                2015-2023
-              </p>
+              <p className=" text-[15px] text-sm text-[#4c7753]">2015-2023</p>
               <h4 className=" pb-3 text-[20px] font-semibold w-[100%] text-[#54595F] ">
                 DEVELOPMENT SKILL
               </h4>
-              
+
               <div>
-              <p className=" text-[15px] text-sm dark:text-gray-800 flex font-medium">
-                <FaCode className="text-[25px] text-[#4c7753] mr-3"  /> CODING
-              </p>
-              <hr className=" flex my-2   w-[25%] bg-gray-800 " />
+                <p className=" text-[15px] text-sm dark:text-gray-800 flex font-medium">
+                  <FaCode className="text-[25px] text-[#4c7753] mr-3" /> CODING
+                </p>
+                <hr className=" flex my-2   w-[25%] bg-gray-800 " />
 
                 {dataItems.map((item, index) => (
                   <div key={index}>
@@ -131,10 +136,38 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
+
+              <p className="mt-8 text-[15px] text-sm dark:text-gray-800 flex font-medium">
+                <FaCode className="text-[25px] text-[#4c7753] mr-3" /> FRONT-END
+              </p>
+              <hr className=" flex my-2   w-[25%] bg-gray-800 " />
+
+              <div class="grid grid-cols-2  place-content-stretch mt-2 h-48 ...">
+                {data.map((item, index) => (
+                  <div className="flex flex-col items-center" key={index}>
+                    <h1 className="text-[#4c7753] p-4">
+                      <CircularProgressbar 
+                        value={item.percentage}
+                        text={`${item.percentage}%`}
+                        styles={{
+                          path: {
+                            stroke: '#4c7753', // Green color
+                          },
+                          text: {
+                            fill: '#4c7753', // Green color
+                            fontSize: '20px',
+                          },
+                        }}
+                      />
+                    </h1>
+                    <h2 className="flex text-[20px] font-semibold text-[#54595F] text-center">
+                      {item.title}
+                    </h2>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-          <div className="text-[25px] py-4 ml-4 mt-10 mb-10   "></div>
-          <div className="text-[25px] py-4 ml-4 "></div>
         </div>
       </div>
     </>

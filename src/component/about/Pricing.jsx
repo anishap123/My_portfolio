@@ -12,7 +12,7 @@ const Pricing = () => {
       <div class="grid grid-cols-2 gap-4 place-content-stretch  mt-4  h-48 ...">
         <div className=" flex flex-col mr-4  border-r-2 border-[#7A7A7A]-4 justify-center items-center ">
           <h1 className="bg-[#bbdac0]  rounded-full p-2">
-            <BatteryGauge value={40} className="w-10 h-10" />
+            <BatteryGauge value={75} className="w-10 h-10" />
           </h1>
           <h2 className="flex text-[20px] font-semibold text-[#54595F]">
             React
@@ -24,7 +24,7 @@ const Pricing = () => {
         </div>
         <div className=" flex flex-col justify-center items-center">
         <h1 className="bg-[#bbdac0]  rounded-full p-2">
-        <BatteryGauge value={60} className="w-10 h-10" />
+        <BatteryGauge value={90} className="w-10 h-10" />
           </h1>
           <h2 className="flex text-[20px] font-semibold text-[#54595F]">
             Wordpress Development

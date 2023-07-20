@@ -2,6 +2,7 @@ import React from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
 import { FaCode, FaFacebook, FaFacebookSquare, FaGitSquare, FaGithubSquare, FaMailBulk, FaPhone, FaTwitterSquare, FaVoicemail } from "react-icons/fa";
 import image from '../image/contactimg.png';
+import ContactForm from "../component/contact/ContactForm";
 const Contact = () => {
   return (
     <>
@@ -11,9 +12,9 @@ const Contact = () => {
             Contact
           </div>
           <hr className=" flex my-2  h-full w-full bg-gray-800 " />
-          <div className="flex w-[100%] justify-center text-[35px] font-medium text-[#54595F] ">Contact With Me</div>
+          <div className="flex w-[100%] justify-center text-[35px] font-medium text-[#54595F] hover:text-[#4c7753] ">Contact With Me</div>
 
-          <div className=" py-4 ml-2  mb-20 w-[98%] flex  justify-between  ">
+          <div className=" py-4 ml-2   w-[98%] flex  justify-between  ">
             <div className="flex  w-[35%] flex-col  shadow rounded-md bg-slate-100">
               <div className="  rounded-md  p-3 ">
               <img src={image} alt="" className="h-full w-full rounded " />
@@ -37,8 +38,16 @@ const Contact = () => {
 
             </div>
             
-            <div className="flex justify-start w-[65%] flex-col ml-4 mr-4 bg-slate-600">jjj</div>
+          <ContactForm />
           </div>
+          <div className="flex w-[100%] justify-center  mb-4 ">
+         
+            <iframe  className="w-[96%] mr-3 rounded"
+            src="https://maps.google.com/maps?width=2058&amp;height=240&amp;hl=en&amp;q=chitwan avatar petroll&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+           
+          </div>
+
         </div>
       </div>
     </>

@@ -1,6 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+
+
 
 const ContactForm = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address,setAddress] =useState("");
+  const [subject, setSubject] =useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("phone_number", phone);
+    formData.append("email", email);
+    formData.append("subject", subject);
+    formData.append("address", address);
+    formData.append("message", message);
+    
+
+    try {
+      await axios.post("http://127.0.0.1:8000/contact/", formData).then(() => {
+        console.log("success");
+        setSubmitted(true);
+      })
+    } catch (error) {
+      console.error("Error posting data:", error);
+    }
+  };
+
+  if (submitted) {
+    return <div className="text-2xl">Thank you!</div>;
+  }
+
+
   return (
     <>
       <div className="flex justify-start w-[65%] flex-col ml-4 mr-4 bg-slate-200 rounded p-3">
@@ -8,6 +45,7 @@ const ContactForm = () => {
           action="#"
           method="POST"
           className="mx-auto  max-w-xl "
+          onSubmit={handleSubmit}
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -20,9 +58,10 @@ const ContactForm = () => {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="name"
+                  id="name"
                   autoComplete="given-name"
+                  onChange={(e) => setName(e.target.value)}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -40,6 +79,7 @@ const ContactForm = () => {
                   name="phone"
                   id="phone"
                   autoComplete="phone"
+                  onChange={(e) => setPhone(e.target.value)}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -58,6 +98,7 @@ const ContactForm = () => {
                   name="email"
                   id="email"
                   autoComplete="email"
+                  onChange={(e) => setEmail(e.target.value)}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -76,6 +117,7 @@ const ContactForm = () => {
                   name="subject"
                   id="subject"
                   autoComplete="organization"
+                  onChange={(e) => setSubject(e.target.value)}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -92,6 +134,7 @@ const ContactForm = () => {
                   name="message"
                   id="message"
                   rows="3"
+                  onChange={(e) => setMessage(e.target.value)}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>

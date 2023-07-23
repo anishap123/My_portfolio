@@ -15,11 +15,11 @@ const ProfileCard = () => {
     <>
       <div className=" basis-[35%]  h-[90vh] mt-6 ml-2 mx-auto     max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-white">
         <div className="h-[100%] w-[100%] ">
-          <div className="flex h-[60%] w-[100%] ">
+          <div className=" triangle flex h-[60%] w-[100%] relative ">
             <img
               className=" h-full w-full rounded-t-lg object-cover "
               src={image}
-              alt=" "
+              alt=""
             />
           </div>
 

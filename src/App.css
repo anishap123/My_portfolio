@@ -1,4 +1,50 @@
-/* *{
-    
-    background: linear-gradient(to right, #c8c1c1, #fff );
-} */
+
+
+
+
+
+  
+  .triangle-container {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+  }
+  
+  .triangle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 225px 50px 0;
+    border-color: transparent white transparent transparent;
+    transform: rotate(180deg);
+  }
+  
+  .triangle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 225px 0 0;
+    border-color: transparent white transparent transparent;
+    transform: rotate(360deg);
+  }
+
+  .active-link {
+    color: #4c7753 /* Green color */
+  }
+
+  /* Assuming you have a container for the profile card */
+.profile-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

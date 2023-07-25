@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="overflow-x-hidden bg-[#bcbcbc] h-screen">
-        <div className="flex ">
+        <div className="flex flex-col sm:flex-row ">
           <Sidebar />
           <ProfileCard />
 

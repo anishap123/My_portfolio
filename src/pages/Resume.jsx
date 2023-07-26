@@ -52,22 +52,22 @@ const Resume = () => {
 
   return (
     <>
-      <div className="basis-[58%] border h-[85vh] mt-10 ml- -2 mr-8 bg-white rounded-r-md  overflow-auto">
-        <div className="About flex flex-col ">
+      <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3 bg-white rounded-r-md sm:rounded-r-md rounded-l-md sm:rounded-l-sm overflow-auto">
+        <div className="About flex flex-col  ">
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer ">
             Resume
           </div>
           <hr className=" flex my-2  h-full w-full bg-gray-800 " />
 
-          <div className=" py-4 ml-6 mt-3 mb-20 w-[90%] flex  justify-between mr-3">
-            <div className="flex  w-[100%] flex-col">
+          <div className=" py-4 ml-6 mt-3 mb-20 w-[90%] flex  justify-between mr-3 sm:flex-row flex-col">
+            <div className="flex  w-[100%] flex-col sm:mr-2 mr-2">
               <p className="ml-4 text-[15px] text-sm text-[#4c7753]">
                 2015-2023
               </p>
               <h4 className="pl-4 pb-4 text-[20px] font-semibold w-[100%] text-[#54595F] ">
                 EDUCATIONAL QUALITY
               </h4>
-              <ol className="relative border-l border-gray-200 dark:border-gray-500">
+              <ol className="relative border-l border-gray-200 dark:border-gray-500  ">
                 <ul>
                   {educationData.map((item) => (
                     <li
@@ -105,7 +105,7 @@ const Resume = () => {
                 </ul>
               </ol>
             </div>
-            <div className="flex justify-start w-[100%] flex-col ml-6">
+            <div className="flex justify-start w-[100%] flex-col ml-6  ">
               <p className=" text-[15px] text-sm text-[#4c7753]">2015-2023</p>
               <h4 className=" pb-3 text-[20px] font-semibold w-[100%] text-[#54595F] ">
                 DEVELOPMENT SKILL
@@ -118,8 +118,8 @@ const Resume = () => {
                 <hr className=" flex my-2   w-[25%] bg-gray-800 " />
 
                 {dataItems.map((item, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between mb-2 mt-2 ">
+                  <div key={index} className="mr-6 sm:mr-2">
+                    <div className="flex justify-between mb-2 mt-2  ">
                       <span className="text-base font-medium text-[#54595F] ">
                         {item.name}
                       </span>
@@ -144,7 +144,7 @@ const Resume = () => {
 
               <div class="grid grid-cols-2  place-content-stretch mt-2 h-48 ...">
                 {data.map((item, index) => (
-                  <div className="flex flex-col items-center" key={index}>
+                  <div className="flex flex-col items-center mr-6 sm:mr-2" key={index}>
                     <h1 className="text-[#4c7753] p-4">
                       <CircularProgressbar 
                         value={item.percentage}

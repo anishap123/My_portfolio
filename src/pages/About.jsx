@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MyServices from "../component/about/MyServices";
 import Pricing from "../component/about/Pricing";
 import FunFact from "../component/about/FunFact";
 
 const About = () => {
+  // Replace 'YYYY-MM-DD' with the actual birthdate in the format 'YYYY-MM-DD'
+  const birthdate = "2000-8-29";
+
+  const [age, setAge] = useState(0);
+
+  useEffect(() => {
+    const calculateAge = () => {
+      const birthDateObj = new Date(birthdate);
+      const currentDate = new Date();
+
+      let yearsDiff = currentDate.getFullYear() - birthDateObj.getFullYear();
+      const monthsDiff = currentDate.getMonth() - birthDateObj.getMonth();
+      const daysDiff = currentDate.getDate() - birthDateObj.getDate();
+
+      // Check if the birthdate for the current year has passed or not
+      if (monthsDiff < 0 || (monthsDiff === 0 && daysDiff < 0)) {
+        yearsDiff -= 1;
+      }
+
+      setAge(yearsDiff);
+    };
+
+    calculateAge(); // Calculate initial age
+    const timer = setInterval(calculateAge, 1000); // Update age every 1000ms (1 second)
+
+    return () => clearInterval(timer); // Clean up the timer when the component unmounts
+  }, [birthdate]);
+
   return (
     <>
       <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3 bg-white rounded-r-md sm:rounded-r-md rounded-l-md sm:rounded-l-sm overflow-auto">
@@ -25,12 +53,12 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-between mt-6 text-[#7A7A7A] ">
               <h2 className="w-full sm:w-[50%]">
-                <span className="font-semibold text-[#54595F]">AGE : .....</span>
-                22
+                <span className="font-semibold text-[#54595F]">
+                  AGE : ...{age}
+                </span>
               </h2>
               <h2 className="w-full sm:w-[50%] mt-4 sm:mt-0">
                 <span className="font-semibold text-[#54595F]">
-                  {" "}
                   RESIDENCE : ....
                 </span>
                 Bharatpur 9, Chitwan
@@ -39,7 +67,6 @@ const About = () => {
             <div className="flex flex-col sm:flex-row justify-between mt-4 text-[#7A7A7A]">
               <h2 className="w-full sm:w-[50%] mt-4 sm:mt-0">
                 <span className="font-semibold text-[#54595F]">
-                  {" "}
                   ADDRESS : ...
                 </span>
                 Bharatpur 9, Chitwan

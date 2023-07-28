@@ -5,7 +5,7 @@ import FunFact from "../component/about/FunFact";
 
 const About = () => {
   // Replace 'YYYY-MM-DD' with the actual birthdate in the format 'YYYY-MM-DD'
-  const birthdate = "2000-8-29";
+  const birthdate = "2001-10-28";
 
   const [age, setAge] = useState(0);
 
@@ -18,7 +18,7 @@ const About = () => {
       const monthsDiff = currentDate.getMonth() - birthDateObj.getMonth();
       const daysDiff = currentDate.getDate() - birthDateObj.getDate();
 
-      // Check if the birthdate for the current year has passed or not
+      
       if (monthsDiff < 0 || (monthsDiff === 0 && daysDiff < 0)) {
         yearsDiff -= 1;
       }
@@ -26,10 +26,10 @@ const About = () => {
       setAge(yearsDiff);
     };
 
-    calculateAge(); // Calculate initial age
-    const timer = setInterval(calculateAge, 1000); // Update age every 1000ms (1 second)
+    calculateAge(); 
+    const timer = setInterval(calculateAge, 1000); 
 
-    return () => clearInterval(timer); // Clean up the timer when the component unmounts
+    return () => clearInterval(timer); 
   }, [birthdate]);
 
   return (
@@ -76,7 +76,7 @@ const About = () => {
           <div className="text-[25px] py-4 ml-4 mt-3 mb-6 sm:mb-20">
             <MyServices />
           </div>
-          <div className="text-[25px] py-4 ml-4 mt-40 sm:mt-10 mb-6 sm:mb-10">
+          <div className="text-[25px] py-4 ml-4 mt-3 sm:mt-6 mb-6 sm:mb-10">
             <Pricing />
           </div>
           <div className="text-[25px] py-4 ml-4">

@@ -23,7 +23,7 @@ const Contact = () => {
               <div className="flex text-gray-400 ml-4 font-sans">I am available for freelance work. Connect with me via and call in to my account.</div>
               <span className="flex flex-row ml-4 mt-3">
                 <FaPhone className="text-[#4c7753] mt-1" />
-                <p className="ml-3 text-[#54595F] text-sm sm:text-base">9865316914</p>
+                <p className="ml-3 text-[#54595F] text-sm sm:text-base">9865316915</p>
               </span>
               <span className="flex flex-row ml-4 mt-1">
                 <FaMailBulk className="text-[#4c7753] mt-1" />

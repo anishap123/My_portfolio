@@ -5,7 +5,7 @@ import FunFact from "../component/about/FunFact";
 
 const About = () => {
   // Replace 'YYYY-MM-DD' with the actual birthdate in the format 'YYYY-MM-DD'
-  const birthdate = "2001-10-28";
+  const birthdate = "2000-09-20";
 
   const [age, setAge] = useState(0);
 

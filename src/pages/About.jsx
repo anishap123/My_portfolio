@@ -46,10 +46,8 @@ const About = () => {
             </h2>
             <br />
             <p className="text-[#7A7A7A]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              nostrum voluptatem similique praesentium corporis soluta, placeat
-              enim, esse expedita, saepe veritatis error fugit quasi nesciunt?
-              Earum, officia! Doloremque, ipsum quae!
+            Frond-end developer from Chitwan, Nepal. I have rich experience in   React Js, Wordpress, Tailwind Css  and Bootstrap. 
+             I also have some knowledge of Django for backend collaboration,
             </p>
             <div className="flex flex-col sm:flex-row justify-between mt-6 text-[#7A7A7A] ">
               <h2 className="w-full sm:w-[50%]">

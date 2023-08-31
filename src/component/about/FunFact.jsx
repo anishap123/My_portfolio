@@ -16,7 +16,7 @@ const FunFact = () => {
           <h3 className="flex text-[20px] font-semibold text-[#7A7A7A] text-center">
           singing and listening 
           <br/>
-           to mucic 
+           to music
           </h3>
 
 
@@ -28,7 +28,7 @@ const FunFact = () => {
           <h2 className="flex text-[20px] font-semibold text-[#7A7A7A] text-center ">
             Drowing and  Make 
             <br />
-            fhbdjlh
+            aaa
           </h2>
 
 

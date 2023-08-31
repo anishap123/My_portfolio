@@ -32,7 +32,7 @@ const MyServices = () => {
           <h1 className="text-[#4c7753]">
             <FaFrownOpen className="mt-2 text-[#4c7753] text-[36px]" />
           </h1>
-          <h2 className="flex text-[20px] font-semibold text-[#54595F]">Front-End</h2>
+          <h2 className="flex text-[20px] font-semibold text-[#54595F]">Wordpress-Security</h2>
           <p className="flex text-[16px]  text-[#7A7A7A]"></p>
         </div>
       </div>

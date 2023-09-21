@@ -28,7 +28,7 @@ const FunFact = () => {
           <h2 className="flex text-[20px] font-semibold text-[#7A7A7A] text-center ">
             Drowing and  Make 
             <br />
-            aaa
+            aaaaaaa
           </h2>
 
 

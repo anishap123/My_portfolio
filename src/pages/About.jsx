@@ -39,7 +39,7 @@ const About = () => {
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer">
             About Me
           </div>
-          <hr className="flex my-2 h-full w-full bg-gray-800" />
+          <hr className="flex my-2 h-full w-full bg-[#4c7753]" />
           <div className="flex ml-4 flex-col">
             <h2 className="font-semibold text-[#54595F] text-[20px]">
               Hello ! I am Anisha Poudel.

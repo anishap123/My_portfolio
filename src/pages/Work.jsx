@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
+
 const Work = () => {
   const [workdata, setWorkdata] = useState([]);
   const baseurl = 'http://127.0.0.1:8000/';
@@ -30,7 +31,8 @@ const Work = () => {
               >
                 <h1 className="bg-[#ffffff] rounded p-2 w-[40%] h-[40%] shadow-md">
                   <Link to={item.link} target="_blank">
-                    <img src={item.img} alt="" className="w-full h-full" />
+                    <img src={`baseurl ${item.img}`} alt="" className="w-full h-full" />
+                    
               
                   </Link>
                 </h1>

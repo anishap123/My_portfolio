@@ -40,7 +40,7 @@ const ContactForm = () => {
           className="mx-auto  max-w-xl  "
           onSubmit={handleSubmit}
         >
-                   <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label
                 htmlFor="first-name"

@@ -31,7 +31,7 @@ const Work = () => {
               >
                 <h1 className="bg-[#ffffff] rounded p-2 w-[40%] h-[40%] shadow-md">
                   <Link to={item.link} target="_blank">
-                    <img src={`baseurl ${item.img}`} alt="" className="w-full h-full" />
+                  <img src={`${baseurl}${item.img}`} alt="" className="w-full h-full" />
                     
               
                   </Link>

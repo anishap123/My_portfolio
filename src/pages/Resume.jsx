@@ -5,7 +5,8 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Resume = () => {
   const dataItems = [
-    { name: "React JS", percentage: 75 },
+    { name: "React JS", percentage: 80 },
+    { name: "Next JS", percentage: 75 },
     { name: "Html/Css", percentage: 80 },
     { name: "Wordpress", percentage: 90 },
     { name: "Django", percentage: 30 },
@@ -44,7 +45,7 @@ const Resume = () => {
 
   // front-end
   const data = [
-    { percentage: 75, title: "React " },
+    { percentage: 80, title: "React " },
     { percentage: 80, title: "Html/Css" },
     { percentage: 85, title: "Bootstrap" },
     { percentage: 90, title: "Tailwind Css" },
@@ -106,7 +107,7 @@ const Resume = () => {
               </ol>
             </div>
             <div className="flex justify-start w-[100%] flex-col ml-6  ">
-              <p className=" text-[15px] text-sm text-[#4c7753]">2015-2023</p>
+              <p className=" text-[15px] text-sm text-[#4c7753]">2019-2025</p>
               <h4 className=" pb-3 text-[20px] font-semibold w-[100%] text-[#54595F] ">
                 DEVELOPMENT SKILL
               </h4>

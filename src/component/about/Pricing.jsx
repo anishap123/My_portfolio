@@ -28,7 +28,7 @@ const Pricing = () => {
             <BatteryGauge value={90} className="w-10 h-10" />
           </h1>
           <h2 className="flex text-[20px] font-semibold text-[#54595F]">
-            Wordpress Development
+            Wordpress Development ........
           </h2>
           <p className="flex text-[16px] text-[#7A7A7A] text-center">
             

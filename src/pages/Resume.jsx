@@ -19,7 +19,7 @@ const Resume = () => {
     {
       id: 1,
       title: "Bachelor in Computer Application",
-      grade: "grade",
+      complete: "complete",
       university: "Tribhuvan University (2019 - 2024)",
       description:
         "The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.",
@@ -27,7 +27,7 @@ const Resume = () => {
     {
       id: 1,
       title: "Higher Education (11 & 12)",
-      grade: "grade",
+      complete: "complete",
       university: "Gurukul Secondary School (2017 - 2018)",
       description:
         "Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education.",
@@ -35,7 +35,7 @@ const Resume = () => {
     {
       id: 1,
       title: "Secondary School Education",
-      grade: "grade",
+      complete: "complete",
       university: "Shree Mahendra H.S School (2015-2016)",
       description:
         "Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale.",
@@ -90,7 +90,7 @@ const Resume = () => {
                       <h3 className="flex items-center mb-1 text-lg font-semibold text-[#54595F]">
                         {item.title}{" "}
                         <span className=" ml-2 bg-white text-sm font-medium mr-2 px-2.5 py-1 rounded dark:bg-white text-[#4c7753] shadow-md">
-                          {item.grade}
+                          {item.complete}
                         </span>
                       </h3>
 

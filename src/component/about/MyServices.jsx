@@ -4,7 +4,7 @@ import { FaAngular, FaCodeBranch, FaDatabase, FaFrownOpen, FaReacteurope, FaWord
 const MyServices = () => {
   return (
     <>
-      <div className="font-semibold text-[#4c7753] mt-6 text-[24px]">My Services</div>
+      <div className="font-semibold text-[#4c7753] mt-6 text-[24px]">My Services...</div>
       <hr className="flex my-2 h-1 w-[8%] bg-[#4c7753]" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
         <div className="flex flex-col p-4 border border-gray-300 rounded-lg  hover:bg-gradient-to-l from-white to-[#b3cab7]">

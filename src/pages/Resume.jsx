@@ -133,10 +133,7 @@ const Resume = () => {
                         className="bg-[#4c7753] h-2 rounded-full"
                         style={{
                            width: `${item.percentage}%`
-                           
-                          
-                  
-
+        
                       }}
                       ></div>
                     </div>

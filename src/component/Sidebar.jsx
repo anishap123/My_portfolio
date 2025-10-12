@@ -41,7 +41,7 @@ const Sidebar = () => {
           <Link to="/contact" onClick={() => handleLinkClick('/contact')}>
             <div className={`flex items-center gap-2 p-4 flex-col cursor-pointer hover:text-[#4c7753] ${isLinkActive('/contact')}`}>
               <FaPhoneAlt className="hover:text-[#4c7753]" />
-              <p>Contact</p>
+              <p>Contact Me</p>
             </div>
           </Link>
         </div>

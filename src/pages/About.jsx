@@ -64,7 +64,7 @@ const About = () => {
             </div>
             <div className="w-full sm:w-1/2">
               <span className="font-semibold text-[#54595F]">RESIDENCE:</span>{" "}
-              Belgium (Temporary)
+              Belgium (Temporary Address)
             </div>
           </div>
 

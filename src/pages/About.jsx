@@ -79,7 +79,7 @@ const About = () => {
               <span className="font-semibold text-[#54595F]">
                 CURRENT ADDRESS:
               </span>{" "}
-              Antwerp, Belgium
+              Antwerp, Belgium.......
             </div>
           </div>
         </div>

@@ -79,7 +79,8 @@ const About = () => {
               <span className="font-semibold text-[#54595F]">
                 CURRENT ADDRESS:
               </span>{" "}
-              Antwerp, Belgium.......
+              Antwerp, Belgium Lorem, 
+              ipsum dolor sit amet consectetur adipisicing elit. Placeat optio nulla saepe cum dolores libero asperiores delectus dolore quam deserunt quo nam culpa, alias reprehenderit. Delectus accusamus aut dicta optio.
             </div>
           </div>
         </div>

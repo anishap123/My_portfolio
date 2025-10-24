@@ -59,7 +59,9 @@ const ProfileCard = () => {
               <Link to="https://github.com/anishap123">
                 <FaGithub className="text-lg text-black" />
               </Link>
+              <Link to="https://www.linkedin.com/in/anisha-poudel-0905842a4/">
               <FaLinkedinIn className="text-lg text-blue-400" />
+              </Link>
             </p>
           </div>
         </div>

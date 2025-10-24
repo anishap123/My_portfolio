@@ -19,7 +19,8 @@ const Work = () => {
       <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3 bg-white rounded-r-md sm:rounded-r-md rounded-l-md sm:rounded-l-sm overflow-auto">
         <div className="About flex flex-col mb-4 sm:mb-0">
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer">
-            Work
+            Work 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est similique maxime qui? Iste tempora repudiandae porro nobis suscipit? Eveniet autem laudantium debitis, quasi deleniti quos culpa dicta consequatur. Veniam, consectetur?
           </div>
           <hr className=" flex my-2 h-full w-full bg-gray-800 " />
 

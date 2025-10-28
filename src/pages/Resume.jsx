@@ -1,5 +1,12 @@
 import React from "react";
-import { FaCode, FaFrownOpen, FaWordpress } from "react-icons/fa";
+import {
+  FaCode,
+  FaFrownOpen,
+  FaWordpress,
+  FaFigma,
+  FaCanva,
+  FaPhotoshop,
+} from "react-icons/fa";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
@@ -132,9 +139,8 @@ const Resume = () => {
                       <div
                         className="bg-[#4c7753] h-2 rounded-full"
                         style={{
-                           width: `${item.percentage}%`
-        
-                      }}
+                          width: `${item.percentage}%`,
+                        }}
                       ></div>
                     </div>
                   </div>
@@ -148,18 +154,21 @@ const Resume = () => {
 
               <div class="grid grid-cols-2  place-content-stretch mt-2 h-48 ...">
                 {data.map((item, index) => (
-                  <div className="flex flex-col items-center mr-6 sm:mr-2" key={index}>
+                  <div
+                    className="flex flex-col items-center mr-6 sm:mr-2"
+                    key={index}
+                  >
                     <h1 className="text-[#4c7753] p-4">
-                      <CircularProgressbar 
+                      <CircularProgressbar
                         value={item.percentage}
                         text={`${item.percentage}%`}
                         styles={{
                           path: {
-                            stroke: '#4c7753', // Green color
+                            stroke: "#4c7753", // Green color
                           },
                           text: {
-                            fill: '#4c7753', // Green color
-                            fontSize: '20px',
+                            fill: "#4c7753", // Green color
+                            fontSize: "20px",
                           },
                         }}
                       />
@@ -169,7 +178,24 @@ const Resume = () => {
                     </h2>
                   </div>
                 ))}
-              </div>
+                  </div>
+
+                {/* <div className="h-full w-full">
+                  <p className=" text-[15px] text-sm dark:text-gray-800 flex font-medium pt-4 ">
+                    <FaCode className="text-[25px] text-[#4c7753] mr-3" />{" "}
+                    DESIGN TOOLS
+                  </p>
+                  <hr className=" flex my-2   w-[50%] bg-gray-800 " />
+
+
+
+
+
+
+              
+              </div> */}
+
+              
             </div>
           </div>
         </div>

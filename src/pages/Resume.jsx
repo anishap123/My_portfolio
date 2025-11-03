@@ -47,7 +47,7 @@ const Resume = () => {
 
   const data = [
     { percentage: 80, title: "React " },
-    { percentage: 80, title: "Html/Css" },
+    { percentage: 90, title: "Html/Css" },
     { percentage: 85, title: "Bootstrap" },
     { percentage: 90, title: "Tailwind Css" },
   ];

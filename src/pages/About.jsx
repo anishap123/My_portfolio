@@ -99,7 +99,6 @@ const About = () => {
         {/* ---------- FUN FACT ---------- */}
         <div className="text-[25px] py-4 ml-4 mb-6">
           <FunFact />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, molestias tempora et dolorem esse ea vel incidunt qui autem numquam nulla sapiente, enim iste, at iure repellendus nobis nisi totam?
         </div>
       </div>
       

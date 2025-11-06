@@ -80,7 +80,7 @@ const About = () => {
                 CURRENT ADDRESS:
               </span>{" "}
               Antwerp, Belgium 
-
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque vitae, reprehenderit excepturi itaque dignissimos aperiam assumenda quos ea ratione, obcaecati repellendus laudantium praesentium animi fugit optio. Ab, quisquam aspernatur?
 
             </div>
           </div>

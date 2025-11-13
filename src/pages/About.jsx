@@ -80,8 +80,6 @@ const About = () => {
                 CURRENT ADDRESS:
               </span>{" "}
               Antwerp, Belgium 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, suscipit. Labore, quibusdam non possimus, deserunt, quod at tenetur dolores facere aliquam odit magni sed rerum dignissimos. Commodi exercitationem deserunt temporibus.
-
             </div>
           </div>
         </div>

@@ -34,8 +34,6 @@ const FunFact = () => {
             <br />
             Nail Art
           </h2>
-
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iste vitae delectus excepturi repellendus voluptates, eos commodi quas, assumenda illo reiciendis ipsa in soluta corporis dolore repellat quae qui minima!
         </div>
 
       </div>

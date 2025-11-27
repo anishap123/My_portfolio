@@ -177,17 +177,17 @@ const Resume = () => {
                     className="flex flex-col items-center justify-center bg-gradient-to-br from-[#f0f8f2] to-[#ffffff] shadow-md rounded-2xl py-4 px-2 transition-all duration-300 hover:scale-105 hover:shadow-xl"
                     key={index}
                   >
-                    <div className="text-[#4c7753] w-16 mb-2">
+                    <div className="text-[#4c7753] w-18 mb-2">
                       <CircularProgressbar
                         value={item.percentage}
                         text={`${item.percentage}%`}
                         styles={{
                           path: { stroke: "#4c7753" },
-                          text: { fill: "#4c7753", fontSize: "14px" },
+                          text: { fill: "#4c7753", fontSize: "12px" },
                         }}
                       />
                     </div>
-                    <h2 className="text-[18px] font-semibold text-[#54595F] text-center">
+                    <h2 className="text-[16px] font-semibold text-[#54595F] text-center">
                       {item.title}
                     </h2>
                   </div>

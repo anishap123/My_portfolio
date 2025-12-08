@@ -194,6 +194,7 @@ const Resume = () => {
                 ))}
               </div>
             </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora accusamus iure. Rerum explicabo, magni veritatis saepe consectetur ratione! Hic, iure praesentium repellat error labore perferendis delectus tempora officiis atque.
           </div>
         </div>
       </div>

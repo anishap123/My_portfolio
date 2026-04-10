@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import MyServices from "../component/about/MyServices";
 import Pricing from "../component/about/Pricing";
 import FunFact from "../component/about/FunFact";
+import { FaGlobeEurope, FaMusic, FaSketch } from "react-icons/fa";
+import { MdLanguage } from "react-icons/md";
+import { IoLanguage } from "react-icons/io5";
 
 const About = () => {
-  const birthdate = "2000-09-20";
+  const birthdate = "2001-09-28";
   const [age, setAge] = useState(0);
 
   useEffect(() => {
@@ -27,6 +30,24 @@ const About = () => {
     const timer = setInterval(calculateAge, 1000);
     return () => clearInterval(timer);
   }, [birthdate]);
+
+  const languages = [
+    {
+      name: "Nederlands",
+      level: "Intermediate",
+      flag: "https://flagcdn.com/w40/nl.png",
+    },
+    {
+      name: "English",
+      level: "Fluent",
+      flag: "https://flagcdn.com/w40/gb.png",
+    },
+    {
+      name: "Nepali",
+      level: "Native",
+      flag: "https://flagcdn.com/w40/np.png",
+    },
+  ];
 
   return (
     <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-md overflow-auto shadow-md">
@@ -79,7 +100,7 @@ const About = () => {
               <span className="font-semibold text-[#54595F]">
                 CURRENT ADDRESS:
               </span>{" "}
-              Antwerp, Belgium 
+              Antwerp, Belgium
             </div>
           </div>
         </div>
@@ -98,8 +119,47 @@ const About = () => {
         <div className="text-[25px] py-4 ml-4 mb-6">
           <FunFact />
         </div>
+        <div className="text-[25px] py-4 ml-4 mb-6">
+          <div className="py-6 px-4">
+            <div className="py-6 px-4">
+              {/* Title */}
+              <div className="mb-8">
+                <h2 className="text-[26px] font-bold text-[#4c7753]">
+                  Languages
+                </h2>
+                <div className="w-20 h-1 bg-[#4c7753] mt-2 rounded-full"></div>
+              </div>
+
+              {/* Language List */}
+              <div className="flex flex-col gap-5">
+                {languages.map((lang, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-4 bg-[#bbdac0] rounded-xl px-5 py-4 hover:scale-[1.02] transition duration-300"
+                  >
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-sm">
+                      <img
+                        src={lang.flag}
+                        alt={`${lang.name} Flag`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div>
+                      <h3 className="text-[#4c7753] font-semibold text-[18px]">
+                        {lang.name}
+                      </h3>
+                      <p className="text-[#4c7753] text-[14px] mt-1">
+                        {lang.level}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </div>
   );
 };

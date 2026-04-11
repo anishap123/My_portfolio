@@ -79,7 +79,7 @@ const About = () => {
           </p>
 
           {/* ---------- PERSONAL INFO ---------- */}
-          <div className="flex flex-col sm:flex-row justify-between mt-6 text-[#7A7A7A]">
+          {/* <div className="flex flex-col sm:flex-row justify-between mt-6 text-[#7A7A7A]">
             <div className="w-full sm:w-1/2 mb-4 sm:mb-0">
               <span className="font-semibold text-[#54595F]">AGE:</span> {age}
             </div>
@@ -102,11 +102,11 @@ const About = () => {
               </span>{" "}
               Antwerp, Belgium
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* ---------- SERVICES ---------- */}
-        <div className="text-[25px] py-4 ml-4 mt-6 sm:mt-8">
+        <div className="text-[25px] py-2 ml-4 mt-6 sm:mt-8">
           <MyServices />
         </div>
 

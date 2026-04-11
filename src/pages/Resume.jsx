@@ -23,7 +23,7 @@ const Resume = () => {
       id: 1,
       title: "Bachelor in Computer Application",
       complete: "complete",
-      university: "Tribhuvan University (2019 - 2024)",
+      university: "Tribhuvan University (2019 - 2023)",
       description:
         "The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture.",
     },

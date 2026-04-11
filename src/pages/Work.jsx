@@ -53,11 +53,15 @@ const Work = () => {
     <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3 bg-white rounded-md overflow-auto">
       
       <div className="flex flex-col">
-        <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753]">
+        <div className="text-[25px] py-4  ml-4 font-bold text-[#4c7753]">
           Work
         </div>
 
         <hr className="my-2 w-full bg-gray-800" />
+        <div className="font-semibold text-[#4c7753] mt-2 pl-4 text-[24px]">
+       Project
+      </div>
+      <hr className=" flex my-2 ml-4  h-1 w-[5%] bg-[#4c7753]" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-4">
           {workdata.map((item) => (

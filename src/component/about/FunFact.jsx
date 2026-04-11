@@ -5,7 +5,7 @@ const FunFact = () => {
   return (
    <>
      <div className="font-semibold text-[#4c7753] mt-2  text-[24px]">
-        FunFact
+        FunFact 
       </div>
       <hr className=" flex my-2  h-1 w-[5%] bg-[#4c7753]" />
       <div class="grid grid-cols-2 gap-4 place-content-stretch  mt-4  h-48 ...">
@@ -16,7 +16,7 @@ const FunFact = () => {
           </h1> 
           </div>
           <h3 className="flex text-[20px] font-semibold text-[#7A7A7A] text-center">
-          singing and listening 
+          Singing and listening 
           <br/>
            to music
           </h3>

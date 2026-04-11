@@ -33,7 +33,7 @@ const About = () => {
 
   const languages = [
     {
-      name: "Nederlands",
+      name: "Dutch",
       level: "Intermediate",
       flag: "https://flagcdn.com/w40/nl.png",
     },
@@ -119,12 +119,12 @@ const About = () => {
         <div className="text-[25px] py-4 ml-4 mb-6">
           <FunFact />
         </div>
-        <div className="text-[25px] py-4 ml-4 mb-6">
+        <div className="text-[25px] py-4 ml-4 mb-2">
           <div className="py-6 px-4">
             <div className="py-6 px-4">
               {/* Title */}
-              <div className="mb-8">
-                <h2 className="text-[26px] font-bold text-[#4c7753]">
+              <div className="mb-4">
+                <h2 className="text-[22px] font-bold text-[#4c7753]">
                   Languages
                 </h2>
                 <div className="w-20 h-1 bg-[#4c7753] mt-2 rounded-full"></div>

@@ -57,7 +57,7 @@ const Experience = () => {
 
         <div className="relative">
           {/* Vertical Center Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-emerald-100 hidden md:block"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-[#4c7753] hidden md:block"></div>
 
           <div className="space-y-24">
             {experiences.map((exp, index) => (
@@ -69,16 +69,16 @@ const Experience = () => {
               >
                 {/* 1. Content Card */}
                 <div className="w-full md:w-[45%]">
-                  <div className="p-6 bg-white border border-gray-100 rounded-xl shadow-lg hover:shadow-emerald-100 hover:border-emerald-500 transition-all duration-300 relative">
+                  <div className="p-6 bg-white border border-gray-100 rounded-xl shadow-lg hover:shadow-emerald-100 hover:border-[#4c7753] transition-all duration-300 relative">
                     {/* Date for Mobile Only */}
-                    <span className="text-xs font-bold text-emerald-600 mb-2 block md:hidden">
+                    <span className="text-xs font-bold text-[#4c7753] mb-2 block md:hidden">
                       {exp.duration}
                     </span>
 
                     <h3 className="text-xl font-bold text-gray-900 mb-1">
                       {exp.role}
                     </h3>
-                    <p className="text-emerald-700 font-semibold text-sm mb-4">
+                    <p className="text-[#4c7753] font-semibold text-sm mb-4">
                       {exp.company}
                     </p>
 
@@ -88,7 +88,7 @@ const Experience = () => {
                           key={i}
                           className="flex items-start text-sm text-gray-600 leading-relaxed"
                         >
-                          <span className="mr-2 mt-2 h-1.5 w-1.5 shrink-0 bg-emerald-500 rounded-full"></span>
+                          <span className="mr-2 mt-2 h-1.5 w-1.5 shrink-0 bg-[4c7753] rounded-full"></span>
                           {point}
                         </li>
                       ))}
@@ -100,7 +100,7 @@ const Experience = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:flex items-center">
                   
                   {/* The Circle - Modified to contain the image */}
-                  <div className="flex items-center justify-center w-14 h-14 bg-white border-2 border-emerald-500 rounded-full shadow-md overflow-hidden">
+                  <div className="flex items-center justify-center w-14 h-14 bg-white border-2 border-[#4c7753] rounded-full shadow-md overflow-hidden">
                     {/* 2. REPLACED INNER DOT WITH LOGO IMAGE */}
                     <img 
                       src={exp.logoUrl} 

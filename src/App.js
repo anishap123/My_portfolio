@@ -12,7 +12,12 @@ import Navbar from "./component/navbar";
 function App() {
   return (
     <>
-      <div className="overflow-x-hidden bg-[#bcbcbc] h-screen">
+       <div
+  className="min-h-screen bg-cover bg-center bg-no-repeat "
+  style={{
+    backgroundImage: "url('/images/backgroundimg1.png')",
+  }}
+>
         <div className="flex flex-col sm:flex-row">
           <Sidebar />
           <Navbar />

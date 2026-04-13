@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const ProfileCard = () => {
   return (
     <>
-   
+
       <div className="w-full sm:w-[35%] h-[90vh] mt-20  sm:mt-6  sm:ml-2  sm:mr-0 mx-auto max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-white">
         <div className="h-[60%] sm:h-[60%] w-[%] sm:w-[100%]">
           <div className="triangle flex h-full relative">

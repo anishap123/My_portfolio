@@ -50,6 +50,7 @@ const About = () => {
   ];
 
   return (
+    <>
     <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-md overflow-auto shadow-md">
       <div className="flex flex-col">
         {/* ---------- ABOUT HEADER ---------- */}
@@ -161,6 +162,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

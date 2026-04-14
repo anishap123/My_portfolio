@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import MyServices from "../component/about/MyServices";
 import Pricing from "../component/about/Pricing";
 import FunFact from "../component/about/FunFact";
-import { FaGlobeEurope, FaMusic, FaSketch } from "react-icons/fa";
-import { MdLanguage } from "react-icons/md";
-import { IoLanguage } from "react-icons/io5";
+
 
 const About = () => {
   const birthdate = "2001-09-28";
@@ -79,31 +77,7 @@ const About = () => {
             always focused on clean, efficient, and scalable solutions.
           </p>
 
-          {/* ---------- PERSONAL INFO ---------- */}
-          {/* <div className="flex flex-col sm:flex-row justify-between mt-6 text-[#7A7A7A]">
-            <div className="w-full sm:w-1/2 mb-4 sm:mb-0">
-              <span className="font-semibold text-[#54595F]">AGE:</span> {age}
-            </div>
-            <div className="w-full sm:w-1/2">
-              <span className="font-semibold text-[#54595F]">RESIDENCE:</span>{" "}
-              Belgium (Temporary Address)
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row justify-between mt-4 text-[#7A7A7A]">
-            <div className="w-full sm:w-1/2 mb-4 sm:mb-0">
-              <span className="font-semibold text-[#54595F]">
-                PERMANENT ADDRESS:
-              </span>{" "}
-              Bharatpur-9, Chitwan, Nepal
-            </div>
-            <div className="w-full sm:w-1/2">
-              <span className="font-semibold text-[#54595F]">
-                CURRENT ADDRESS:
-              </span>{" "}
-              Antwerp, Belgium
-            </div>
-          </div> */}
+         
         </div>
 
         {/* ---------- SERVICES ---------- */}

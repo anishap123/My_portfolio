@@ -13,9 +13,9 @@ function App() {
   return (
     <>
        <div
-  className="min-h-screen bg-cover bg-center bg-no-repeat "
+  className="min-h-screen bg-cover bg-center bg-no-repeat bg-[#eee9fa]"
   style={{
-    backgroundImage: "url('/images/backgroundimg1.png')",
+    backgroundImage: " ",
   }}
 >
         <div className="flex flex-col sm:flex-row">

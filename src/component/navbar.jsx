@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav className="sm:hidden flex justify-center items-center bg-white shadow fixed top-0 left-0 w-full mb-0 z-50">
-      <div className="flex flex-row ">
+      <div className="flex flex-row font-semibold">
         <Link to="/" onClick={() => handleLinkClick("/")}>
           <div
             className={`flex mb-2 items-center gap-2 p-4 flex-col cursor-pointer ${isLinkActive(

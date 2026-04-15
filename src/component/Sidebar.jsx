@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <>
 <div className=" hidden sm:flex w-[65vh] h-[8%] md:w-[8%] border   ml-4 mt-8  bg-white rounded-md shadow-sm mr-0">
-        <div className="flex flex-col ">
+        <div className="flex flex-col font-semibold">
           <Link to="/" onClick={() => handleLinkClick('/')}>
             <div className={`flex mb-2 items-center gap-2 p-4 flex-col cursor-pointer ${isLinkActive('/')}`}>
               <FaUser className="hover:text-[#4c7753]" />

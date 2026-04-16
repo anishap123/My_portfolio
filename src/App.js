@@ -14,9 +14,9 @@ function App() {
     <>
        <div
   className="min-h-screen bg-cover bg-center bg-no-repeat bg-[#eee9fa]"
-  style={{
-    backgroundImage: " ",
-  }}
+  // style={{
+  //   backgroundImage: " ",
+  // }}
 >
         <div className="flex flex-col sm:flex-row">
           <Sidebar />

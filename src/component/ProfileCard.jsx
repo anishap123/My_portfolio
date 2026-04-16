@@ -27,11 +27,11 @@ const ProfileCard = () => {
 
         <div className="flex flex-col items-center justify-between h-[40%] sm:h-[50%]">
           <div className="p-5">
-            <h5 className="mb-2 text-[24px] sm:text-[34px] font-bold tracking-tight text-gray-900 dark:text-black hover:text-[#4070f4]">
+            <h5 className="mb-2 text-[24px] sm:text-[34px] font-bold tracking-tight text-gray-900 dark:text-black hover:text-[#4c7753]">
               Anisha Poudel
             </h5>
 
-            <h1 className="flex justify-center text-[12px] sm:text-[14px] text-[#5921cf] mt-1 ml-3 p-2 ">
+            <h1 className="flex justify-center text-[12px] sm:text-[14px] text-[#4c7753] mt-1 ml-3 p-2 ">
               <span className="relative h-[20px] sm:h-[24px] w-36 sm:w-40 overflow-hidden font-semibold">
                 <span className="absolute h-full w-full -translate-y-full animate-slide leading-none">
                   Front-End Developer

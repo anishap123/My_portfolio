@@ -1,13 +1,11 @@
 import React from "react";
 import {
   FaCode,
-  FaWordpress,
-  FaFigma,
-  FaCanva,
-  FaPhotoshop,
 } from "react-icons/fa";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+
+import { motion } from "framer-motion"; // ✅ ADDED ONLY
 
 const Resume = () => {
   const dataItems = [
@@ -56,31 +54,60 @@ const Resume = () => {
     { percentage: 90, title: "Canva" },
     { percentage: 80, title: "Figma" },
     { percentage: 70, title: "Photoshop" },
+    { percentage: 70, title: "Git" },
+    { percentage: 80, title: "GitHub" },
+    { percentage: 80, title: "VsCode" },
   ];
 
   return (
     <>
-      <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3 bg-white rounded-md overflow-auto shadow-md">
+      {/* ✅ MAIN FADE IN */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3 bg-white rounded-md overflow-auto shadow-md"
+      >
         <div className="About flex flex-col">
-          <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer">
-            Resume
-          </div>
-          <hr className="flex my-2 h-full w-full bg-gray-800" />
 
-          <div className="py-4 ml-6 mt-3 mb-20 w-[90%] flex justify-between mr-3 sm:flex-row flex-col">
-            {/* Education Section */}
+          {/* TITLE FADE */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer"
+          >
+            Resume
+          </motion.div>
+
+          <hr className="my-2 w-full bg-[#4c7753] h-[2px] " />
+
+          <div className="py-4 ml-2 sm:ml-8 mt-3 mb-20 w-[90%] flex justify-between mr-3 sm:flex-row flex-col">
+
+            {/* EDUCATION SECTION */}
             <div className="flex w-[100%] flex-col sm:mr-2 mr-2">
               <p className="ml-4 text-[15px] text-sm text-[#4c7753]">
                 2015-2023
               </p>
-              <h4 className="pl-4 pb-4 text-[20px] font-semibold text-[#54595F]">
+
+              <motion.h4
+                animate={{ opacity: [0.7, 1, 0.7] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="pl-4 pb-4 text-[20px] font-semibold text-[#54595F]"
+              >
                 EDUCATIONAL QUALITY
-              </h4>
+              </motion.h4>
+
               <ol className="relative border-l border-gray-200 dark:border-gray-500">
                 <ul>
-                  {educationData.map((item) => (
-                    <li
+                  {educationData.map((item, index) => (
+                    <motion.li
                       key={item.id}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: index * 0.1 }}
+                      whileHover={{ scale: 1.02 }}
                       className="mb-10 ml-6 border p-2 rounded-md shadow-md bg-gradient-to-r from-[#e0e3e5] to-[#ffffff]"
                     >
                       <span className="absolute flex items-center justify-center w-6 h-6 bg-[#bbdac0] rounded-full -left-3 ring-8 ring-white"></span>
@@ -91,31 +118,40 @@ const Resume = () => {
                           {item.complete}
                         </span>
                       </h3>
+
                       <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
                         {item.university}
                       </time>
+
                       <hr className="flex my-2 h-full w-full bg-gray-800" />
+
                       <p className="mb-4 text-base font-normal text-gray-500">
                         {item.description}
                       </p>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </ol>
             </div>
 
-            {/* Skills Section */}
-            <div className="flex flex-col w-[100%] ml-6">
-              <p className="text-[15px] text-sm text-[#4c7753]">2019-2025</p>
+            {/* SKILLS SECTION */}
+            <div className="flex flex-col w-[100%] sm:ml-6 ml-2 ">
+
+              <p className="text-[15px] text-sm text-[#4c7753]">
+                2019-2025
+              </p>
+
               <h4 className="pb-3 text-[20px] font-semibold text-[#54595F]">
                 DEVELOPMENT SKILL
               </h4>
 
-              {/* Coding Section */}
-              <p className="text-[15px] text-sm dark:text-gray-800 flex font-medium">
-                <FaCode className="text-[25px] text-[#4c7753] mr-3" /> CODING
+              {/* CODING */}
+              <p className="flex font-medium">
+                <FaCode className="text-[25px] text-[#4c7753] mr-3" />
+                CODING
               </p>
-              <hr className="flex my-2 w-[25%] bg-gray-800" />
+
+              <hr className="my-2 w-[25%]" />
 
               {dataItems.map((item, index) => (
                 <div key={index} className="mr-6 sm:mr-2 mb-3">
@@ -127,26 +163,35 @@ const Resume = () => {
                       {item.percentage}%
                     </span>
                   </div>
+
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: `${item.percentage}%` }}
+                      transition={{ duration: 1 }}
                       className="bg-[#4c7753] h-2 rounded-full"
-                      style={{ width: `${item.percentage}%` }}
-                    ></div>
+                    ></motion.div>
                   </div>
                 </div>
               ))}
 
-              {/* Front-end Section */}
-              <p className="mt-10 text-[15px] text-sm dark:text-gray-800 flex font-medium">
-                <FaCode className="text-[25px] text-[#4c7753] mr-3" /> FRONT-END
+              {/* FRONT-END */}
+              <p className="mt-10 flex font-medium">
+                <FaCode className="text-[25px] text-[#4c7753] mr-3" />
+                FRONT-END
               </p>
-              <hr className="flex my-2 w-[25%] bg-gray-800" />
+
+              <hr className="my-2 w-[25%]" />
 
               <div className="grid grid-cols-2 gap-5 mt-4">
                 {data.map((item, index) => (
-                  <div
-                    className="flex flex-col items-center p-3 bg-gradient-to-r from-[#eef7f0] to-[#ffffff] rounded-xl shadow-md hover:shadow-lg transition duration-300"
+                  <motion.div
                     key={index}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    className="flex flex-col items-center p-3 bg-gradient-to-r from-[#eef7f0] to-[#ffffff] rounded-xl shadow-md"
                   >
                     <div className="text-[#4c7753] p-2 w-20">
                       <CircularProgressbar
@@ -158,24 +203,30 @@ const Resume = () => {
                         }}
                       />
                     </div>
+
                     <h2 className="text-[18px] font-semibold text-[#54595F] text-center mt-2">
                       {item.title}
                     </h2>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
-              {/* Design Tools Section */}
-              <p className="mt-10 text-[15px] text-sm dark:text-gray-800 flex font-medium">
-                🎨 DESIGN TOOLS
+              {/* TOOLS */}
+              <p className="mt-10 flex font-medium">
+                🎨 Tools & Version Control
               </p>
-              <hr className="flex my-2 w-[35%] bg-gray-800" />
+
+              <hr className="my-2 w-[35%]" />
 
               <div className="grid grid-cols-3 gap-5 mt-4">
                 {designtoolsdata.map((item, index) => (
-                  <div
-                    className="flex flex-col items-center justify-center bg-gradient-to-br from-[#f0f8f2] to-[#ffffff] shadow-md rounded-2xl py-4 px-2 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                  <motion.div
                     key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileHover={{ scale: 1.08 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="flex flex-col items-center justify-center bg-gradient-to-br from-[#f0f8f2] to-[#ffffff] shadow-md rounded-2xl py-4 px-2"
                   >
                     <div className="text-[#4c7753] w-18 mb-2">
                       <CircularProgressbar
@@ -187,16 +238,18 @@ const Resume = () => {
                         }}
                       />
                     </div>
+
                     <h2 className="text-[16px] font-semibold text-[#54595F] text-center">
                       {item.title}
                     </h2>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
+
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

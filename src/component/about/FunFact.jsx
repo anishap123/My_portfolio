@@ -8,7 +8,7 @@ const FunFact = () => {
         FunFact 
       </div>
       <hr className=" flex my-2  h-1 w-[5%] bg-[#4c7753]" />
-      <div class="grid grid-cols-2 gap-4 place-content-stretch  mt-4  h-48 ...">
+      <div class="grid grid-cols-2 gap-4 place-content-stretch  mt-2  h-48 ...">
         <div className=" flex flex-col mr-4  justify-center items-center ">
           <div className='custom-spin'>
           <h1 className="bg-[#bbdac0]   transform rotate-45 mb-3  ">

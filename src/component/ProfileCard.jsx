@@ -14,11 +14,11 @@ const ProfileCard = () => {
   return (
     <>
 
-      <div className="w-full sm:w-[35%] h-[90vh] mt-20  sm:mt-6  sm:ml-2  sm:mr-0 mx-auto max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-white">
+      <div className="w-full sm:w-[35%] h-[90vh] mt-20  sm:mt-6  sm:ml-2  sm:mr-0 mx-auto max-w-md bg-white border border-gray-200 rounded-lg  shadow dark:bg-white">
         <div className="h-[60%] sm:h-[60%] w-[%] sm:w-[100%]">
           <div className="triangle flex h-full relative">
             <img
-              className="h-full w-full rounded-t-lg object-cover"
+              className="h-full w-full rounded-t-lg  object-cover"
               src={image}
               alt=""
             />
@@ -45,22 +45,22 @@ const ProfileCard = () => {
             <hr className="flex my-2 w-full bg-gray-800 mt-4" />
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 flex flex-row gap-3 justify-center mt-4">
               <Link to="https://www.facebook.com/anishapoudel.anishapoudel/">
-                <FaFacebook className="text-blue-500 text-lg" target="blank" />
+                <FaFacebook className="text-blue-500 text-lg transition-transform duration-200 hover:scale-125 active:scale-110" target="blank" />
               </Link>
               <Link to="https://www.instagram.com/anishaa_poudel/">
-                <FaInstagram className="text-red-400 text-lg" />
+                <FaInstagram className="text-red-400 text-lg transition-transform duration-200 hover:scale-125 active:scale-110" />
               </Link>
               <Link to="https://www.tiktok.com/@poudelanisha1">
-                <FaTiktok className="text-lg text-black" />
+                <FaTiktok className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-black" />
               </Link>
               <Link to="https://twitter.com/Anishap29213390">
-                <FaTwitter className="text-lg text-blue-400" />
+                <FaTwitter className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-blue-400" />
               </Link>
               <Link to="https://github.com/anishap123">
-                <FaGithub className="text-lg text-black" />
+                <FaGithub className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-black" />
               </Link>
               <Link to="https://www.linkedin.com/in/anisha-poudel-0905842a4/">
-              <FaLinkedinIn className="text-lg text-blue-400" />
+              <FaLinkedinIn className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-blue-400" />
               </Link>
             </p>
           </div>

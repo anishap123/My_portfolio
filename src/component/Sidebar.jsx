@@ -1,52 +1,63 @@
-import { React, useState } from 'react';
-import { FaBookDead, FaPenAlt, FaPhoneAlt, FaUser } from 'react-icons/fa';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import {
+  FaBookDead,
+  FaPenAlt,
+  FaPhoneAlt,
+  FaUser,
+} from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
-  const [activeLink, setActiveLink] = useState('/');
+  const location = useLocation();
 
-  const handleLinkClick = (path) => {
-    setActiveLink(path);
-  };
-
-  const isLinkActive = (path) => {
-    return path === activeLink ? 'active-link' : '';
-  };
+  const navItems = [
+    { path: "/", icon: FaUser, label: "About" },
+    { path: "/resume", icon: FaBookDead, label: "Resume" },
+    { path: "/work", icon: FaPenAlt, label: "Work" },
+    { path: "/contact", icon: FaPhoneAlt, label: "Contact" },
+  ];
 
   return (
-    <>
-<div className=" hidden sm:flex w-[65vh] h-[8%] md:w-[8%] border   ml-4 mt-8  bg-white rounded-md shadow-sm mr-0">
-        <div className="flex flex-col font-semibold">
-          <Link to="/" onClick={() => handleLinkClick('/')}>
-            <div className={`flex mb-2 items-center gap-2 p-4 flex-col cursor-pointer ${isLinkActive('/')}`}>
-              <FaUser className="hover:text-[#4c7753]" />
-              <p className="">About</p>
-            </div>
-          </Link>
-          <hr className="hidden sm:flex my-2 h-full w-full bg-gray-800 " />
-          <Link to="/resume" onClick={() => handleLinkClick('/resume')}>
-            <div className={`flex items-center gap-2 p-4 flex-col hover:text-[#4c7753] cursor-pointer ${isLinkActive('/resume')}`}>
-              <FaBookDead className="hover:text-[#4c7753]" />
-              <p>Resume</p>
-            </div>
-          </Link>
-          <hr className="flex my-2 border-blue-gray-500" />
-          <Link to="/work" onClick={() => handleLinkClick('/work')}>
-            <div className={`flex items-center gap-2 p-4 flex-col cursor-pointer hover:text-[#4c7753] ${isLinkActive('/work')}`}>
-              <FaPenAlt className="hover:text-[#4c7753]" />
-              <p>Work</p>
-            </div>
-          </Link>
-          <hr className="flex my-2 border-blue-gray-500" />
-          <Link to="/contact" onClick={() => handleLinkClick('/contact')}>
-            <div className={`flex items-center gap-2 p-4 flex-col cursor-pointer hover:text-[#4c7753] ${isLinkActive('/contact')}`}>
-              <FaPhoneAlt className="hover:text-[#4c7753]" />
-              <p>Contact</p>
-            </div>
-          </Link>
-        </div>
+    <div className="hidden sm:flex w-[65vh] h-[8%] md:w-[8%] border ml-4 mt-8 bg-white rounded-md shadow-sm">
+      <div className="flex flex-col font-semibold w-full">
+
+        {navItems.map((item, index) => {
+          const Icon = item.icon;
+          const isActive = location.pathname === item.path;
+
+          return (
+            <React.Fragment key={index}>
+
+              <Link to={item.path}>
+                <div
+                  className={`group flex flex-col items-center gap-2 p-4 cursor-pointer font-sans transition-all duration-200 font-semibold
+                  ${isActive ? "text-[#4c7753]" : "text-black]"}
+                  hover:text-[#4c7753]`}
+                >
+                  <Icon
+                    className="
+                      text-lg
+                      transition-transform duration-200
+                      group-hover:scale-125
+                      group-active:scale-110
+                    "
+                  />
+
+                  <p className="text-sm">{item.label}</p>
+                </div>
+              </Link>
+
+              {/* Divider except last item */}
+              {index !== navItems.length - 1 && (
+                <hr className="my-2 border-gray-200 w-full" />
+              )}
+
+            </React.Fragment>
+          );
+        })}
+
       </div>
-    </>
+    </div>
   );
 };
 

@@ -57,9 +57,11 @@ const Work = () => {
           Work
         </div>
 
-        <hr className="my-2 w-full bg-gray-800" />
+        <hr className="my-2 w-full bg-[#4c7753] h-[2px] " />
+        <Experience />
+
         <div className="font-semibold text-[#4c7753] mt-2 pl-4 text-[24px]">
-       Project
+       Projects
       </div>
       <hr className=" flex my-2 ml-4  h-1 w-[5%] bg-[#4c7753]" />
 
@@ -94,7 +96,7 @@ const Work = () => {
           ))}
         </div>
 
-        <Experience />
+        
       </div>
     </div>
     

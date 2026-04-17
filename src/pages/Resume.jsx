@@ -5,9 +5,12 @@ import {
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
+
 import { motion } from "framer-motion"; // ✅ ADDED ONLY
 
 const Resume = () => {
+
+  
   const dataItems = [
     { name: "React JS", percentage: 80 },
     { name: "Next JS", percentage: 75 },
@@ -59,6 +62,8 @@ const Resume = () => {
     { percentage: 80, title: "VsCode" },
   ];
 
+  
+
   return (
     <>
       {/* ✅ MAIN FADE IN */}
@@ -108,7 +113,7 @@ const Resume = () => {
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
                       whileHover={{ scale: 1.02 }}
-                      className="mb-10 ml-6 border p-2 rounded-md shadow-md bg-gradient-to-r from-[#e0e3e5] to-[#ffffff]"
+                      className="mb-10 ml-6 border p-2 rounded-md shadow-md bg-gradient-to-r from-[#e0e3e5] to-[#ffffff] hover:shadow-emerald-200"
                     >
                       <span className="absolute flex items-center justify-center w-6 h-6 bg-[#bbdac0] rounded-full -left-3 ring-8 ring-white"></span>
 
@@ -222,6 +227,7 @@ const Resume = () => {
                 {designtoolsdata.map((item, index) => (
                   <motion.div
                     key={index}
+                    
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     whileHover={{ scale: 1.08 }}
@@ -232,6 +238,7 @@ const Resume = () => {
                       <CircularProgressbar
                         value={item.percentage}
                         text={`${item.percentage}%`}
+                        
                         styles={{
                           path: { stroke: "#4c7753" },
                           text: { fill: "#4c7753", fontSize: "12px" },

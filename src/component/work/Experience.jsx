@@ -99,7 +99,7 @@ const Experience = () => {
                   <div
                     className="p-4 sm:p-6 bg-gradient-to-r from-[#bbdac0] to-[#ffffff] 
                     border border-gray-100 rounded-xl shadow-lg 
-                    hover:shadow-emerald-200 hover:border-[#bbdac0] 
+                    hover:shadow-[#86a987] hover:border-[#86a987] 
                     transition-all duration-300 transform hover:-translate-y-2"
                   >
                     {/* Mobile Date */}
@@ -111,7 +111,7 @@ const Experience = () => {
                       {exp.role}
                     </h3>
 
-                    <p className="text-[#4c7753] font-semibold text-sm mb-3">
+                    <p className="text-[#4c7753] font-semibold font-mono text-sm mb-3">
                       {exp.company}
                     </p>
 

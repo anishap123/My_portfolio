@@ -61,6 +61,7 @@ const Resume = () => {
     { percentage: 80, title: "GitHub" },
     { percentage: 80, title: "VsCode" },
   ];
+  
 
   
 

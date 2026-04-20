@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer ">
             Contact
           </div>
-          <hr className=" flex my-2  h-full w-full bg-[#4c7753] " />
+          <hr className="my-2 w-full bg-[#4c7753] h-[2px] " />
           {/* <div className="flex w-[100%] justify-center text-[35px] font-medium text-[#54595F] hover:text-[#4c7753] ">Contact Me</div> */}
 
           <div className=" py-4 ml-2   w-[98%] flex  justify-between  sm:flex-row flex-col ">

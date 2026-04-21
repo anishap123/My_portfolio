@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import image from "../image/contactimg.png";
 import ContactForm from "../component/contact/ContactForm";
-import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
@@ -18,7 +17,7 @@ const Contact = () => {
             Contact
           </div>
           <hr className="my-2 w-full bg-[#4c7753] h-[2px] " />
-          {/* <div className="flex w-[100%] justify-center text-[35px] font-medium text-[#54595F] hover:text-[#4c7753] ">Contact Me</div> */}
+        
 
           <div className=" py-4 ml-2   w-[98%] flex  justify-between  sm:flex-row flex-col ">
             <div className="flex w-full sm:w-[35%] flex-col shadow-md rounded-md bg-slate-100">
@@ -47,17 +46,33 @@ const Contact = () => {
               <h2 className="ml-4 text-[#54595F] text-base sm:text-xl mt-4">
                 FIND WITH ME
               </h2>
-              <span className="flex flex-row ml-2 mt-1 gap-2 sm:justify-center mb-4 p-2">
-                <Link to="https://www.facebook.com/anishapoudel.anishapoudel/">
+              <div className="flex justify-center gap-2 ml-4 mt-2 mb-4">
+
+                <a
+                  href="https://www.facebook.com/anishapoudel.anishapoudel/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaFacebookSquare className="text-[35px] text-blue-400 shadow-md p-2 bg-white" />
-                </Link>
-                <Link to="https://github.com/anishap123">
+                </a>
+
+                <a
+                  href="https://github.com/anishap123"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithubSquare className="text-[35px] shadow-md p-2 bg-white" />
-                </Link>
-                <Link to="https://twitter.com/Anishap29213390">
+                </a>
+
+                <a
+                  href="https://twitter.com/Anishap29213390"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaTwitterSquare className="text-[35px] text-blue-400 shadow-md p-2 bg-white" />
-                </Link>
-              </span>
+                </a>
+
+              </div>
             </div>
 
             <ContactForm />

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MyServices from "../component/about/MyServices";
 import Pricing from "../component/about/Pricing";
 import FunFact from "../component/about/FunFact";

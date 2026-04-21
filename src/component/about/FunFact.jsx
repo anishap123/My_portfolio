@@ -32,7 +32,7 @@ const FunFact = () => {
           <h2 className="flex text-[20px] font-semibold text-[#7A7A7A] text-center ">
             Drawing and
             <br />
-            Nail Art
+            NailArt
           </h2>
         </div>
 

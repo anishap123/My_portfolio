@@ -6,8 +6,6 @@ import Languages from "../component/about/Languages";
 import ScrollReveal from "../component/animation/ScrollReveal";
 
 const About = () => {
- 
-
   return (
     <>
       <div className="... overflow-auto custom-scrollbar basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-md shadow-lg shadow-[#86a987]/80">

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFrownOpen, FaWordpress } from "react-icons/fa";
 import BatteryGauge from 'react-battery-gauge';
 
 const Pricing = () => {

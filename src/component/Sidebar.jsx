@@ -18,7 +18,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="hidden sm:flex w-[65vh] h-[8%] md:w-[8%] border ml-4 mt-8 bg-white rounded-md shadow-sm">
+    <div className="hidden sm:flex w-[65vh] h-[8%] md:w-[8%] border ml-4 mt-8 bg-white rounded-md shadow-lg shadow-[#86a987]/80 ">
       <div className="flex flex-col font-semibold w-full">
 
         {navItems.map((item, index) => {

@@ -13,10 +13,10 @@ function App() {
   return (
     <>
        <div
-  className="min-h-screen bg-cover bg-center bg-no-repeat bg-[#eee9fa]"
-  // style={{
-  //   backgroundImage: " ",
-  // }}
+  className="min-h-screen bg-cover bg-center bg-no-repeat "
+   style={{
+      backgroundImage: "url('/images/backgroundimg6.png')",
+   }}
 >
         <div className="flex flex-col sm:flex-row">
           <Sidebar />

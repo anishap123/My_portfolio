@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <>
-      <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-md overflow-auto shadow-md">
+      <div className="... overflow-auto custom-scrollbar basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-md shadow-lg shadow-[#86a987]/80">
         <div className="flex flex-col">
           {/* ---------- ABOUT HEADER ---------- */}
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753]">

@@ -49,7 +49,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-xl overflow-auto shadow-lg">
+    <div className="... overflow-auto custom-scrollbar basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:ml-0 sm:mr-8 mr-3 bg-white rounded-xl shadow-lg shadow-[#86a987]/80">
       
       <div className="flex flex-col">
         

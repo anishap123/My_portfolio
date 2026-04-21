@@ -48,18 +48,29 @@
 }
 
 
-
-
-.custom-spin {
-  animation: spin 3s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+ 
 }
 
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4c7753;
+  border-radius: 10px;
+}
 
+/* Show scrollbar buttons (top & bottom arrows) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: block;
+  height: 12px;
+  background-color: #06a10b; /* light gray like before */
+}
+
+/* Optional: hover effect */
+.custom-scrollbar::-webkit-scrollbar-button:hover {
+  background-color: #0ea227;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4c7753 #e5e7eb;
+}

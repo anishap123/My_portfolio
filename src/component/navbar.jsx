@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sm:hidden flex justify-center items-center bg-white shadow fixed top-0 left-0 w-full z-50">
+    <nav className="sm:hidden flex justify-center items-center bg-white  fixed top-0 left-0 w-full z-50 shadow-lg shadow-[#86a987]/80 ">
       <div className="flex flex-row font-semibold">
 
         {navItems.map((item, index) => {

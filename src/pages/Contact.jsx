@@ -6,7 +6,7 @@ import ContactForm from "../component/contact/ContactForm";
 const Contact = () => {
   return (
     <>
-      <div className="basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3  bg-white rounded-r-md sm:rounded-r-md rounded-l-md sm:rounded-l-sm overflow-auto">
+      <div className="  ... overflow-auto custom-scrollbar basis-[58%] border h-auto sm:h-[85vh] mt-10 ml-2 sm:-ml-0 sm:mr-8 mr-3  bg-white rounded-r-md sm:rounded-r-md rounded-l-md sm:rounded-l-sm  shadow-lg shadow-[#86a987]/80">
         <div className="About flex flex-col ">
           
           <div className="text-[25px] py-4 ml-4 font-bold text-[#4c7753] cursor-pointer ">
@@ -16,7 +16,7 @@ const Contact = () => {
           {/* <div className="flex w-[100%] justify-center text-[35px] font-medium text-[#54595F] hover:text-[#4c7753] ">Contact Me</div> */}
 
           <div className=" py-4 ml-2   w-[98%] flex  justify-between  sm:flex-row flex-col ">
-          <div className="flex w-full sm:w-[35%] flex-col shadow rounded-md bg-slate-100">
+          <div className="flex w-full sm:w-[35%] flex-col shadow-md rounded-md bg-slate-100">
               <div className="rounded-md p-3">
                 <img src={image} alt="" className="h-full w-full rounded" />
               </div>

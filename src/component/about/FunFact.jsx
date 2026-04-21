@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArtstation, FaMusic, FaSketch, FaWordpress } from 'react-icons/fa'
+import { FaMusic, FaSketch,  } from 'react-icons/fa'
 
 const FunFact = () => {
   return (

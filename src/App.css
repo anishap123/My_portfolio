@@ -74,3 +74,9 @@
   scrollbar-width: thin;
   scrollbar-color: #4c7753 #e5e7eb;
 }
+
+/* //contact for */
+
+.input {
+  @apply w-full rounded-md px-3 py-3 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#4c7753];
+}

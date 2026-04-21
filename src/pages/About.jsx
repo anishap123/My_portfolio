@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import MyServices from "../component/about/MyServices";
 import Pricing from "../component/about/Pricing";
 import FunFact from "../component/about/FunFact";
@@ -6,29 +6,7 @@ import Languages from "../component/about/Languages";
 import ScrollReveal from "../component/animation/ScrollReveal";
 
 const About = () => {
-  const birthdate = "2001-09-28";
-  const [age, setAge] = useState(0);
-
-  useEffect(() => {
-    const calculateAge = () => {
-      const birthDateObj = new Date(birthdate);
-      const currentDate = new Date();
-
-      let yearsDiff = currentDate.getFullYear() - birthDateObj.getFullYear();
-      const monthsDiff = currentDate.getMonth() - birthDateObj.getMonth();
-      const daysDiff = currentDate.getDate() - birthDateObj.getDate();
-
-      if (monthsDiff < 0 || (monthsDiff === 0 && daysDiff < 0)) {
-        yearsDiff -= 1;
-      }
-
-      setAge(yearsDiff);
-    };
-
-    calculateAge();
-    const timer = setInterval(calculateAge, 1000);
-    return () => clearInterval(timer);
-  }, [birthdate]);
+ 
 
   return (
     <>

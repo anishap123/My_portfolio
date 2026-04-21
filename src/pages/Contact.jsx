@@ -1,6 +1,5 @@
 import React from "react";
-import { CircularProgressbar } from "react-circular-progressbar";
-import { FaCode, FaFacebook, FaFacebookSquare, FaGitSquare, FaGithubSquare, FaMailBulk, FaPhone, FaTwitterSquare, FaVoicemail } from "react-icons/fa";
+import { FaFacebookSquare, FaGithubSquare, FaMailBulk, FaPhone, FaTwitterSquare,} from "react-icons/fa";
 import image from '../image/contactimg.png';
 import ContactForm from "../component/contact/ContactForm";
 import { Link } from "react-router-dom";

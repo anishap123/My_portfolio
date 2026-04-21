@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
           <div className="flex w-[100%] justify-center  mb-4  ml-2 sm:-ml-0 mr-4 sm:mr-0">
             <iframe
-              className="w-[96%] mr-3  rounded"
+              className="w-[96%] mr-3 rounded"
               src="https://maps.google.com/maps?width=2058&amp;height=240&amp;hl=en&amp;q=chitwan avatar petroll&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               title="chitwan location googlemap"
             ></iframe>

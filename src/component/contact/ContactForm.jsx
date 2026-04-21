@@ -42,9 +42,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-start w-[100%] sm:w-[65%] flex-col ml-0 sm:ml-4 mr-4 bg-slate-100 sm:bg-slate-200 rounded p-3">
+    <div className="flex justify-start w-[100%] sm:w-[65%] flex-col ml-0 sm:ml-4 mr-4 rounded p-3 border shadow-lg shadow-[#86a987]  " style={{
+      backgroundImage: "url('./images/contactimg.png')",
+   }}>
       
-      <h2 className="sm:hidden text-[#54595F] font-semibold text-xl">
+      <h2 className="sm:hidden text-[#4c7753] font-semibold text-xl">
         Contact me
       </h2>
 
@@ -101,7 +103,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isButtonDisabled}
-            className="w-full bg-slate-500 text-white py-2 rounded hover:bg-[#4c7753]"
+            className=" font-semibold w-full  text-black py-2 rounded hover:bg-[#4c7753] bg-gradient-to-r  from-[#bbdac0] border shadow-sm "
           >
             {submitted
               ? "Thank you! Message sent ✅"

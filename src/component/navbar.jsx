@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  FaBookDead,
+  FaFileAlt,
   FaPenAlt,
   FaPhoneAlt,
   FaUser,
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const navItems = [
     { path: "/", icon: FaUser, label: "About" },
-    { path: "/resume", icon: FaBookDead, label: "Resume" },
+    { path: "/resume", icon: FaFileAlt, label: "Resume" },
     { path: "/work", icon: FaPenAlt, label: "Work" },
     { path: "/contact", icon: FaPhoneAlt, label: "Contact" },
   ];

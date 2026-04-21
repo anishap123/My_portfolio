@@ -4,19 +4,20 @@ import Experience from "../component/work/Experience";
 
 const Work = () => {
   const workdata = [
+    
     {
       id: 1,
-      title: "Nayanarayani",
-      description: "news portal site",
-      img: "../images/nayanarayani.jpg",
-      link: "#",
-    },
-    {
-      id: 2,
       title: "Patrikapress",
       description: "news portal site",
       img: "/images/patrikapress.png",
       link: "https://patrikapress.com/",
+    },
+    {
+      id: 2,
+      title: "Nayanarayani",
+      description: "news portal site",
+      img: "../images/nayanarayani.jpg",
+      link: "https://nayanarayani.com/?p=6778",
     },
     {
       id: 3,

@@ -34,22 +34,22 @@ const Contact = () => {
               <span className="flex flex-row ml-4 mt-3">
                 <FaPhone className="text-[#4c7753] mt-1" />
                 <p className="ml-3 text-[#54595F] text-sm sm:text-base">
-                  +32456860044
+                  +3245XXXXX44
                 </p>
               </span>
               <span className="flex flex-row ml-3 mt-1">
                 <FaMailBulk className="text-[#4c7753] mt-1" />
                 <p className=" text-sm text-[#54595F] mr-1 sm:text-base">
-                  anishapoudel570@gmail.com
+                  anisha.poudel.info@gmail.com
                 </p>
               </span>
               <h2 className="ml-4 text-[#54595F] text-base sm:text-xl mt-4">
-                FIND WITH ME
+                CONTACT WITH ME
               </h2>
               <div className="flex justify-center gap-2 ml-4 mt-2 mb-4">
 
                 <a
-                  href="https://www.facebook.com/anishapoudel.anishapoudel/"
+                  href="https://www.facebook.com/anishapoudel.fb/"
                   target="_blank"
                   rel="noreferrer"
                 >

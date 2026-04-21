@@ -1,8 +1,8 @@
 import React from "react";
 import {
   FaDatabase,
-  FaFrownOpen,
   FaReacteurope,
+  FaShieldAlt,
   FaWordpress,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -40,7 +40,7 @@ const MyServices = () => {
       desc: "WordPress development services to improve business websites.",
     },
     {
-      icon: <FaFrownOpen />,
+      icon: <FaShieldAlt />,
       title: "WordPress Security",
       desc: "Building and maintaining secure, high-performance WordPress websites.",
     },

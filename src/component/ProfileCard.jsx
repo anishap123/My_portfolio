@@ -8,7 +8,7 @@ import {
   FaTiktok,
   FaTwitter,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const ProfileCard = () => {
   return (
@@ -50,26 +50,33 @@ const ProfileCard = () => {
             </h1>
 
             <hr className="flex my-2 w-full bg-gray-800 mt-4" />
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 flex flex-row gap-3 justify-center mt-4">
-              <Link to="https://www.facebook.com/anishapoudel.anishapoudel/">
-                <FaFacebook className="text-blue-500 text-lg transition-transform duration-200 hover:scale-125 active:scale-110" target="blank" />
-              </Link>
-              <Link to="https://www.instagram.com/anishaa_poudel/">
-                <FaInstagram className="text-red-400 text-lg transition-transform duration-200 hover:scale-125 active:scale-110" />
-              </Link>
-              <Link to="https://www.tiktok.com/@poudelanisha1">
-                <FaTiktok className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-black" />
-              </Link>
-              <Link to="https://twitter.com/Anishap29213390">
-                <FaTwitter className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-blue-400" />
-              </Link>
-              <Link to="https://github.com/anishap123">
-                <FaGithub className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-black" />
-              </Link>
-              <Link to="https://www.linkedin.com/in/anisha-poudel-0905842a4/">
-              <FaLinkedinIn className="text-lg transition-transform duration-200 hover:scale-125 active:scale-110 text-blue-400" />
-              </Link>
-            </p>
+           <div className="flex gap-4 justify-center mt-4">
+
+              <a href="https://www.facebook.com/anishapoudel.fb/" target="_blank" rel="noopener noreferrer">
+                <FaFacebook className="text-blue-500 text-lg hover:scale-125 transition" />
+              </a>
+
+              <a href="https://www.instagram.com/anishaa_poudel/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-red-400 text-lg hover:scale-125 transition" />
+              </a>
+
+              <a href="https://www.tiktok.com/@poudelanisha1" target="_blank" rel="noopener noreferrer">
+                <FaTiktok className="text-black text-lg hover:scale-125 transition" />
+              </a>
+
+              <a href="https://twitter.com/Anishap29213390" target="_blank" rel="noopener noreferrer">
+                <FaTwitter className="text-blue-400 text-lg hover:scale-125 transition" />
+              </a>
+
+              <a href="https://github.com/anishap123" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="text-black text-lg hover:scale-125 transition" />
+              </a>
+
+              <a href="https://www.linkedin.com/in/anisha-poudel-0905842a4/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn className="text-blue-400 text-lg hover:scale-125 transition" />
+              </a>
+
+            </div>
           </div>
         </div>
       </div>

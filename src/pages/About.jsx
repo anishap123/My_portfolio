@@ -4,6 +4,7 @@ import Pricing from "../component/about/Pricing";
 import FunFact from "../component/about/FunFact";
 import Languages from "../component/about/Languages";
 import ScrollReveal from "../component/animation/ScrollReveal";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
@@ -17,11 +18,12 @@ const About = () => {
           <hr className="my-2 w-full bg-[#4c7753] h-[2px]" />
 
           {/* ---------- ABOUT INTRO ---------- */}
+        
 
           <div className="flex flex-col ml-4 mr-2">
-            <h2 className="font-semibold text-[#54595F] text-[20px]">
+            <h1 className="font-semibold text-[#54595F] text-[20px]">
               Hello! I’m <span className="text-[#4c7753]">Anisha Poudel</span>
-            </h2>
+            </h1>
             <p className="text-[#7A7A7A] mt-3 leading-relaxed">
               A passionate{" "}
               <span className="font-semibold">Frontend Developer </span>
